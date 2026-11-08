@@ -5,16 +5,7 @@
 > **Tài liệu kiểm toán đối chiếu mã nguồn:** Xem chi tiết tại [`docs/README_AUDIT.md`](docs/README_AUDIT.md).
 
 ---
-# 🇯🇵 NiHonGo Master
 
-> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
-
----
-# 🇯🇵 NiHonGo Master
-
-> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
-
----
 
 # 🇯🇵 NiHonGo Master
 
