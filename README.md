@@ -7,22 +7,16 @@
 ---
 
 
-# 🇯🇵 NiHonGo Master
-
-> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
-
----
-
 ## 👥 THÔNG TIN NHÓM SINH VIÊN THỰC HIỆN
 
-| STT | Họ và tên | Mã sinh viên | Vai trò |
-|:---:|---|:---:|---|
-| 1 | Ngô Thị Minh Phương | 23012156 | Thành viên 1 |
-| 2 | Nguyễn Thị Thu Giang | 23010871 | Thành viên 2 |
+| STT | Họ và tên | Mã sinh viên |
+|:---:|---|:---:|
+| 1 | Ngô Thị Minh Phương | 23012156 | 
+| 2 | Nguyễn Thị Thu Giang | 23010871 | 
 
 ### 📌 Thông tin đề tài
 
-- **Tên đề tài:** Xây dựng ứng dụng học tiếng Nhật NiHonGo Master
+- **Tên đề tài:** Xây dựng ứng dụng học tiếng nhật thông minh NiHonGo Master trên nền tảng Flutter 
 - **Giảng viên hướng dẫn:** TS. Trịnh Thanh Bình
 - **Trường:** Đại học Phenikaa
 - **Năm thực hiện:** 2026
