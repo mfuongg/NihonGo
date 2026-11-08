@@ -415,19 +415,19 @@ python -m unittest discover -s tools/tests -v
 
 ### 13.2. Kết quả kiểm thử thực tế đã xác minh
 
-| Bộ kiểm thử | Số bài test | Kết quả thực tế | Nội dung kiểm chứng |
-|---|---:|---|---|
-| `flutter analyze` | Toàn bộ `lib/` & `test/` | **PASS (`0 errors, 0 warnings`)** | Chỉ có các gợi ý `info` (`prefer_const_constructors`), không có lỗi biên dịch hay cảnh báo. |
-| [`test/n5_vietnamese_sync_verification_test.dart`](test/n5_vietnamese_sync_verification_test.dart) | 6 | **6 / 6 PASS** | Đồng bộ SQLite v3 và hiển thị UI cho 155 mục N5 + 235 câu ví dụ trên 5 màn hình. |
-| [`test/n4_n1_translation_verification_test.dart`](test/n4_n1_translation_verification_test.dart) | 6 | **6 / 6 PASS** | Đồng bộ SQLite v3 và hiển thị UI cho 306 mục N4–N1 + 468 câu ví dụ trên 5 màn hình. |
-| [`test/translation_migration_test.dart`](test/translation_migration_test.dart) | 4 | **4 / 4 PASS** | Migration SQLite v2 → v3, bảo toàn tiến độ học tập khi cập nhật bản dịch. |
-| [`test/pomodoro_provider_test.dart`](test/pomodoro_provider_test.dart) | 12 | **12 / 12 PASS** | Chu kỳ học/nghỉ Pomodoro, Anti-Cheat phạt `-50 Xu`, trừ năng lượng mèo `-1%/phút`. |
-| [`test/cat_position_manager_test.dart`](test/cat_position_manager_test.dart) | 12 | **12 / 12 PASS** | Tọa độ chân mèo (`Foot anchor`), thuật toán bám dính mép thẻ và giới hạn khung nhìn. |
-| [`test/line_companion_cat_test.dart`](test/line_companion_cat_test.dart) | 5 | **5 / 5 PASS** | Kéo-thả mèo trên mép thẻ, đồng bộ hoạt ảnh mèo với trạng thái Pomodoro. |
-| [`test/theme_sync_test.dart`](test/theme_sync_test.dart) | 9 | **9 / 9 PASS** | Đồng bộ tức thời cả 6 bảng màu Cozy Themes trên widget mới (`CozyPalette`) và widget cũ (`AppTheme`). |
-| [`test/navigation_back_button_test.dart`](test/navigation_back_button_test.dart) | 3 | **3 / 3 PASS** | Quy tắc hiển thị nút Back khi màn hình là root route so với pushed route. |
-| [`test/widget_test.dart`](test/widget_test.dart) | 19 | **17 / 19 PASS** *(2 test cũ lệch kỳ vọng dữ liệu)* | 17 bài kiểm thử tích hợp (World Map, Admin God-Mode, Phòng Mèo 24 mèo/36 món/32 đồ, Mèo Nổ PK 4×4, Profile Avatar) đều **PASS**. 2 bài test số #5 và #9 trong file này được viết từ giai đoạn trước khi dịch tiếng Việt nên đang kỳ vọng số từ vựng có `meaning_vi` bằng `0` (thực tế hiện tại là `320`) và từ `両親` có `meaning_vi == null` (thực tế hiện tại là `'bố mẹ, cha mẹ'`). |
-| [`tools/tests/test_auto_translate.py`](tools/tests/test_auto_translate.py) | 9 | **9 / 9 PASS** | Kiểm thử tính idempotent, sao lưu, giới hạn `--limit` và xử lý lỗi của pipeline dịch. |
+| Bộ kiểm thử | Kết quả | Nội dung kiểm chứng |
+|---|---|---|
+| `flutter analyze` | **PASS**<br>0 errors, 0 warnings | Phân tích toàn bộ `lib/` và `test/`. Chỉ còn các gợi ý `info` như `prefer_const_constructors`. |
+| [N5 Vietnamese sync](test/n5_vietnamese_sync_verification_test.dart) | **6/6 PASS** | Đồng bộ SQLite v3 và hiển thị 155 mục N5 cùng 235 câu ví dụ trên 5 màn hình. |
+| [N4–N1 translation](test/n4_n1_translation_verification_test.dart) | **6/6 PASS** | Đồng bộ SQLite v3 và hiển thị 306 mục N4–N1 cùng 468 câu ví dụ trên 5 màn hình. |
+| [Translation migration](test/translation_migration_test.dart) | **4/4 PASS** | Migration SQLite v2 → v3, bảo toàn tiến độ học khi cập nhật bản dịch. |
+| [Pomodoro provider](test/pomodoro_provider_test.dart) | **12/12 PASS** | Chu kỳ học/nghỉ, Anti-Cheat phạt `-50 Xu` và trừ `1%` năng lượng mèo mỗi phút. |
+| [Cat position manager](test/cat_position_manager_test.dart) | **12/12 PASS** | Tọa độ chân mèo (`Foot anchor`), bám dính mép thẻ và giới hạn khung nhìn. |
+| [Line companion cat](test/line_companion_cat_test.dart) | **5/5 PASS** | Kéo-thả mèo trên mép thẻ và đồng bộ hoạt ảnh với trạng thái Pomodoro. |
+| [Theme sync](test/theme_sync_test.dart) | **9/9 PASS** | Đồng bộ 6 Cozy Themes trên widget mới (`CozyPalette`) và widget cũ (`AppTheme`). |
+| [Navigation back button](test/navigation_back_button_test.dart) | **3/3 PASS** | Kiểm tra quy tắc hiển thị nút Back ở root route và pushed route. |
+| [Widget integration](test/widget_test.dart) | **17/19 PASS** | 17 kiểm thử tích hợp đều PASS. 2 test cũ (#5, #9) chưa cập nhật kỳ vọng sau khi dữ liệu được Việt hóa: số mục `meaning_vi` hiện là 320 (không phải 0), và `両親` hiện có nghĩa `'bố mẹ, cha mẹ'` (không còn `null`). |
+| [Python auto-translate](tools/tests/test_auto_translate.py) | **9/9 PASS** | Kiểm tra tính idempotent, sao lưu, giới hạn `--limit` và xử lý lỗi của pipeline dịch. |
 
 ---
 
