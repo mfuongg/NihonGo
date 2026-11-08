@@ -5,7 +5,38 @@
 > **Tài liệu kiểm toán đối chiếu mã nguồn:** Xem chi tiết tại [`docs/README_AUDIT.md`](docs/README_AUDIT.md).
 
 ---
+# 🇯🇵 NiHonGo Master
 
+> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
+
+---
+# 🇯🇵 NiHonGo Master
+
+> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
+
+---
+
+# 🇯🇵 NiHonGo Master
+
+> Ứng dụng hỗ trợ học tiếng Nhật thông minh, kết hợp hệ thống ôn tập từ vựng, ngữ pháp, luyện tập JLPT và gamification.
+
+---
+
+## 👥 THÔNG TIN NHÓM SINH VIÊN THỰC HIỆN
+
+| STT | Họ và tên | Mã sinh viên | Vai trò |
+|:---:|---|:---:|---|
+| 1 | Ngô Thị Minh Phương | 23012156 | Thành viên 1 |
+| 2 | Nguyễn Thị Thu Giang | 23010871 | Thành viên 2 |
+
+### 📌 Thông tin đề tài
+
+- **Tên đề tài:** Xây dựng ứng dụng học tiếng Nhật NiHonGo Master
+- **Giảng viên hướng dẫn:** TS. Trịnh Thanh Bình
+- **Trường:** Đại học Phenikaa
+- **Năm thực hiện:** 2026
+
+---
 ## Mục Lục
 
 1. [Giới thiệu NihonGo Master](#1-giới-thiệu-nihongo-master)
@@ -448,16 +479,3 @@ python -m unittest discover -s tools/tests -v
 4. **Cập nhật 2 assertion cũ trong `test/widget_test.dart`:** Đồng bộ lại kỳ vọng ở Test #5 và Test #9 trong `test/widget_test.dart` theo số lượng bản ghi tiếng Việt mới sau khi được phép chỉnh sửa file test.
 
 ---
-
-## 16. Thông tin nhóm phát triển
-
-> **Trạng thái xác minh:** `Chưa xác minh` (Không tìm thấy danh sách họ tên và mã số sinh viên của các thành viên trong mã nguồn hoặc cấu hình repository).
->
-> Vui lòng bổ sung thông tin nhóm trước khi nộp báo cáo hoặc trình chiếu slide:
-
-| STT | Họ và Tên | Mã số sinh viên | Vai trò / Phụ trách |
-|---:|---|---|---|
-| 1 | *[Cần bổ sung]* | *[Cần bổ sung]* | Trưởng nhóm / Kiến trúc & Database SQLite |
-| 2 | *[Cần bổ sung]* | *[Cần bổ sung]* | Phân hệ Học tập JLPT (Từ vựng, Kanji, Ngữ pháp, Đọc, Nghe) |
-| 3 | *[Cần bổ sung]* | *[Cần bổ sung]* | Phân hệ Gamification (Bản đồ, Pomodoro, Mèo Hộ Pháp, Mèo Nổ PK) |
-| 4 | *[Cần bổ sung]* | *[Cần bổ sung]* | Giao diện Cozy Themes, Firebase Auth & Kiểm thử |
